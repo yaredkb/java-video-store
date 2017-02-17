@@ -2,10 +2,6 @@ import java.math.BigDecimal;
 
 public class RentalCalculator {
 
-	public RentalCalculator() {
-
-	}
-
 	public BigDecimal calculate(Movie movie, int days) {
 		BigDecimal amount;
 
