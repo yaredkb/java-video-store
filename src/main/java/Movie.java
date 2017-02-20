@@ -1,19 +1,24 @@
+import java.math.BigDecimal;
 
-public class Movie {
+public abstract class Movie {
 
-	String title;
-	String priceCode;
+	private String title;
+	private String priceCode;
+	public int getDays;
 
 	public Movie(String title, String priceCode) {
 		this.title = title;
-		this.priceCode = priceCode;
 	}
 
 	public String getTitle() {
 		return title;
 	}
 
-	public String getPriceCode() {
-		return priceCode;
+
+	public void setPriceCode(String priceCode) {
+		this.priceCode = priceCode;
 	}
+
+	public abstract BigDecimal calculateFees(int days);
+
 }
